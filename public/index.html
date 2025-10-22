@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>KontumPlus Experience Platform</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <div class="page-shell">
+            <header class="hero" id="hero">
+                <div class="hero__content">
+                    <div class="hero__preheader">
+                        <span class="pill" id="event-eyebrow">KontumPlus Experience</span>
+                        <span class="pill pill--ghost" id="event-code">#</span>
+                    </div>
+                    <h1 class="hero__title" id="event-title">Future Challenge</h1>
+                    <p class="hero__highlight" id="event-highlight">
+                        Kiến tạo giải pháp chuyển đổi số cho Kon Tum
+                    </p>
+                    <p class="hero__summary" id="event-summary">
+                        Ba ngày tăng tốc cùng mentor doanh nghiệp, xây dựng giải pháp thực tế và kết nối cơ hội nghề nghiệp mơ
+                        ước.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" id="primary-cta" href="#registration">Đăng ký ngay</a>
+                        <a class="btn btn--secondary" id="secondary-cta" href="#">Tải brochure</a>
+                    </div>
+                    <dl class="hero__meta" id="hero-meta"></dl>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__visual-gradient"></div>
+                    <div class="hero__visual-card">
+                        <p class="hero__visual-title">Hành trình 03 ngày</p>
+                        <ul class="hero__visual-points" id="hero-highlights"></ul>
+                        <div class="hero__visual-footnote" id="hero-footnote"></div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section class="section" id="overview">
+                    <div class="section__header">
+                        <h2>Vì sao bạn nên tham gia?</h2>
+                        <p class="section__lead" id="event-description">
+                            Tăng tốc sự nghiệp với chương trình đào tạo thực chiến, kết nối mentor doanh nghiệp và cơ hội việc
+                            làm tại Kon Tum.
+                        </p>
+                    </div>
+                    <div class="section__grid section__grid--three" id="highlight-grid"></div>
+                </section>
+
+                <section class="section section--alt" id="timeline">
+                    <div class="section__header">
+                        <h2>Hành trình chương trình</h2>
+                        <p class="section__lead">Nắm rõ từng mốc quan trọng để chủ động chuẩn bị.</p>
+                    </div>
+                    <div class="timeline" id="timeline-items"></div>
+                </section>
+
+                <section class="section" id="schedule">
+                    <div class="section__header">
+                        <h2>Lịch trình bootcamp</h2>
+                        <p class="section__lead">Khung chương trình chi tiết từng ngày để đội ngũ tối ưu trải nghiệm.</p>
+                    </div>
+                    <div class="schedule" id="schedule-days"></div>
+                </section>
+
+                <section class="section section--alt" id="speakers">
+                    <div class="section__header">
+                        <h2>Mentor & diễn giả</h2>
+                        <p class="section__lead">Đội ngũ chuyên gia đồng hành cùng bạn trong suốt hành trình.</p>
+                    </div>
+                    <div class="section__grid section__grid--three" id="speakers-grid"></div>
+                </section>
+
+                <section class="section" id="partners">
+                    <div class="section__header">
+                        <h2>Đối tác đồng hành</h2>
+                        <p class="section__lead">Sự kiện được bảo chứng bởi các đơn vị tổ chức và tài trợ uy tín.</p>
+                    </div>
+                    <div class="partners" id="partners-list"></div>
+                </section>
+
+                <section class="section section--alt" id="faqs">
+                    <div class="section__header">
+                        <h2>Câu hỏi thường gặp</h2>
+                        <p class="section__lead">Giải đáp nhanh những thắc mắc phổ biến trước khi đăng ký.</p>
+                    </div>
+                    <div class="accordion" id="faq-items"></div>
+                </section>
+
+                <section class="section" id="registration">
+                    <div class="section__header">
+                        <h2>Đăng ký tham gia</h2>
+                        <p class="section__lead">Điền thông tin để giữ chỗ. Ban tổ chức sẽ liên hệ xác nhận trong 24 giờ.</p>
+                    </div>
+                    <div class="form-card">
+                        <form id="registration-form" novalidate>
+                            <div class="form-grid">
+                                <label class="form-field">
+                                    <span>Họ và tên *</span>
+                                    <input type="text" name="fullName" autocomplete="name" required />
+                                </label>
+                                <label class="form-field">
+                                    <span>Email *</span>
+                                    <input type="email" name="email" autocomplete="email" required />
+                                </label>
+                                <label class="form-field">
+                                    <span>Số điện thoại</span>
+                                    <input type="tel" name="phone" autocomplete="tel" placeholder="VD: 0987654321" />
+                                </label>
+                                <label class="form-field">
+                                    <span>Đơn vị/Đội nhóm *</span>
+                                    <input type="text" name="company" required />
+                                </label>
+                                <label class="form-field">
+                                    <span>Vai trò trong đội *</span>
+                                    <input type="text" name="role" required />
+                                </label>
+                                <label class="form-field">
+                                    <span>Số thành viên *</span>
+                                    <input type="number" name="teamSize" min="1" max="10" required />
+                                </label>
+                            </div>
+                            <label class="form-field">
+                                <span>Ghi chú cho ban tổ chức</span>
+                                <textarea name="note" rows="4" placeholder="Nêu mong đợi của đội hoặc nhu cầu hỗ trợ cụ thể."></textarea>
+                            </label>
+                            <button type="submit" class="btn btn--primary form__submit">Gửi đăng ký</button>
+                            <p class="form__feedback" id="registration-feedback" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="section section--alt" id="contact">
+                    <div class="section__header">
+                        <h2>Nhận tư vấn trực tiếp</h2>
+                        <p class="section__lead">Chia sẻ nhu cầu của bạn, đội ngũ KontumPlus sẽ phản hồi nhanh chóng.</p>
+                    </div>
+                    <div class="form-card">
+                        <form id="contact-form" novalidate>
+                            <div class="form-grid">
+                                <label class="form-field">
+                                    <span>Họ và tên *</span>
+                                    <input type="text" name="fullName" required />
+                                </label>
+                                <label class="form-field">
+                                    <span>Email *</span>
+                                    <input type="email" name="email" required />
+                                </label>
+                                <label class="form-field">
+                                    <span>Chủ đề</span>
+                                    <input type="text" name="topic" placeholder="Ví dụ: Hợp tác tài trợ" />
+                                </label>
+                            </div>
+                            <label class="form-field">
+                                <span>Nội dung *</span>
+                                <textarea name="message" rows="4" required></textarea>
+                            </label>
+                            <button type="submit" class="btn btn--secondary form__submit">Gửi yêu cầu</button>
+                            <p class="form__feedback" id="contact-feedback" aria-live="polite"></p>
+                        </form>
+                        <div class="contact-card" id="contact-details"></div>
+                    </div>
+                </section>
+
+                <section class="section" id="other-events">
+                    <div class="section__header">
+                        <h2>Chương trình khác từ KontumPlus</h2>
+                        <p class="section__lead">Khám phá thêm các hoạt động phát triển nghề nghiệp dành cho bạn.</p>
+                    </div>
+                    <div class="section__grid section__grid--two" id="other-events-grid"></div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div>
+                    <span class="footer__brand">KontumPlus</span>
+                    <p>Kiến tạo hệ sinh thái nhân tài Kon Tum.</p>
+                </div>
+                <div class="footer__meta">
+                    <span id="footer-analytics"></span>
+                    <span>© <span id="footer-year"></span> KontumPlus. All rights reserved.</span>
+                </div>
+            </footer>
+        </div>
+        <script type="module" src="/app.js"></script>
+    </body>
+</html>
